@@ -1,0 +1,54 @@
+body {
+    margin: 0;
+    height: 100dvh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Montserrat', sans-serif;
+}
+.title{
+    font-weight: bold;
+    font-size: 1.5rem;
+    line-height: 1rem;
+    color: darkslateblue;
+    text-align: center;
+}
+.calendar {
+    display: grid;
+    grid-template-columns: repeat(7, 32px);
+    grid-auto-rows: 32px;
+    grid-gap: 8px;
+}
+
+.calendar-cell {
+    grid-column: span 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1rem;
+    line-height: 0.75rem;
+    background-color: transparent;
+    border-color: transparent;
+    border-radius: 4px;
+}
+.calendar-cell:hover {
+    outline: 1px dotted slateblue;
+}
+.calendar-cell:focus {
+    outline: 2px solid mediumslateblue;
+}
+
+.cell-alt {
+    color: mediumslateblue;
+}
+
+.cell-today {
+    background-color: darkslateblue;
+    color: white;
+}
+
+.caption {
+    color: darkgrey;
+    margin: 24px 0;
+    text-align: center;
+}
